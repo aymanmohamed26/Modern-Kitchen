@@ -14,7 +14,7 @@ header {
 
 h1 {
     margin: 0;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 p {
@@ -28,25 +28,24 @@ main {
 }
 
 h2 {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     font-size: 2em;
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, 1fr); /* 4 images per row */
     gap: 20px;
     padding: 30px;
 }
 
 .gallery img {
     width: 100%;
-    max-width: 400px; /* Fixing the width */
-    height: 250px; /* Fixed height */
+    max-width: 100%; /* Take full width within the grid */
+    height: 300px; /* Increased fixed height for bigger images */
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    margin: 10px;
 }
 
 /* Media Queries for Different Screen Sizes */
@@ -66,13 +65,12 @@ h2 {
     }
 
     .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row for tablets */
         gap: 20px;
     }
 
     .gallery img {
-        max-width: 250px;
-        height: 150px;
+        height: 250px; /* Adjust image size for tablets */
     }
 }
 
@@ -95,12 +93,11 @@ h2 {
     }
 
     .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-columns: repeat(1, 1fr); /* 1 image per row for mobile */
         gap: 15px;
     }
 
     .gallery img {
-        max-width: 200px;
-        height: 120px;
+        height: 200px; /* Adjust image size for mobile */
     }
 }
