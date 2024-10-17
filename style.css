@@ -41,8 +41,8 @@ h2 {
 
 .gallery img {
     width: 100%;
-    max-width: 300px; /* Fixing the width */
-    height: 200px; /* Fixed height */
+    max-width: 400px; /* Fixing the width */
+    height: 250px; /* Fixed height */
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
