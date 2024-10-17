@@ -41,8 +41,8 @@ h2 {
 
 .gallery img {
     width: 100%;
-    max-width: 100%; /* Take full width within the grid */
-    height: 300px; /* Increased fixed height for bigger images */
+    max-width: 100%; /* Use full available width in the grid */
+    height: 400px; /* Larger fixed height for bigger images */
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -70,7 +70,7 @@ h2 {
     }
 
     .gallery img {
-        height: 250px; /* Adjust image size for tablets */
+        height: 350px; /* Adjust image size for tablets */
     }
 }
 
@@ -98,6 +98,6 @@ h2 {
     }
 
     .gallery img {
-        height: 200px; /* Adjust image size for mobile */
+        height: 300px; /* Adjust image size for mobile */
     }
 }
